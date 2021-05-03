@@ -1,6 +1,7 @@
 const io = require('socket.io')(3000, {
     cors:{origin:"*",},
 });
+const PORT = process.env.PORT || 3000;
 
 const users = {};
 
