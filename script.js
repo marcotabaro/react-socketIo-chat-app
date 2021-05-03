@@ -1,4 +1,5 @@
 const socket = io(`http://localhost:${PORT}`);
+//console.log(socket);
 
 const messageContainer = document.getElementById('message-container');
 const messageForm = document.getElementById('send-container');
