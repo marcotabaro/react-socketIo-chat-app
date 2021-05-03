@@ -11,7 +11,7 @@ appendMessage('You joined');
 socket.emit('new-user', myName);
 
 socket.on('chat-message', data => {
-    appendMessage(data);
+    appendMessage(`${data.myName}: ${data.message}`);
 });
 
 socket.on('user-connected', myName => {
