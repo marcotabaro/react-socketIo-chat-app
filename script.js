@@ -23,9 +23,6 @@ socket.on('user-disconnected', myName => {
 });
 
 
-
-
-
 messageForm.addEventListener('submit', e => {
     e.preventDefault();
     const message = messageInput.value;
