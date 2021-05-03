@@ -18,6 +18,12 @@ socket.on('user-connected', myName => {
     appendMessage(`${myName} connected`);
 });
 
+socket.on('user-disconnected', myName => {
+    appendMessage(`${myName} disconnected`);
+});
+
+
+
 
 
 messageForm.addEventListener('submit', e => {
